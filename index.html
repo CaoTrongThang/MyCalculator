@@ -8,38 +8,182 @@
     class=
     <div id="container">
       <div id="caculator-box">
+        <div id="current-operator-display">
+          <p id="current-operator-text"></p>
+        </div>
         <div id="input-holder">
           <input id="input-ref" value="" type="text" />
           <input id="current-input" value="" type="text" />
         </div>
         <div id="first-row">
-          <button id="AC">AC</button>
-          <button id="CE">CE</button>
+          <button
+            onclick="AC()"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            id="AC"
+          >
+            AC
+          </button>
+          <button
+            onclick="CE()"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            id="CE"
+          >
+            CE
+          </button>
         </div>
         <div id="current-operate" value=""></div>
         <div id="second-row">
-          <button onclick="GetInput(value)" value="1" id="one">1</button>
-          <button onclick="GetInput(value)" value="2" id="two">2</button>
-          <button onclick="GetInput(value)" value="3" id="three">3</button>
-          <button onclick="Operator(value)" value="+" id="add">+</button>
+          <button
+            onclick="GetInput(value)"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            value="1"
+            id="one"
+          >
+            1
+          </button>
+          <button
+            onclick="GetInput(value)"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            value="2"
+            id="two"
+          >
+            2
+          </button>
+          <button
+            onclick="GetInput(value)"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            value="3"
+            id="three"
+          >
+            3
+          </button>
+          <button
+            onclick="Operator(value)"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            value="+"
+            id="add"
+          >
+            +
+          </button>
         </div>
         <div id="third-row">
-          <button onclick="GetInput(value)" value="4" id="four">4</button>
-          <button onclick="GetInput(value)" value="5" id="five">5</button>
-          <button onclick="GetInput(value)" value="6" id="six">6</button>
-          <button onclick="Operator(value)" value="-" id="substract">-</button>
+          <button
+            onclick="GetInput(value)"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            value="4"
+            id="four"
+          >
+            4
+          </button>
+          <button
+            onclick="GetInput(value)"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            value="5"
+            id="five"
+          >
+            5
+          </button>
+          <button
+            onclick="GetInput(value)"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            value="6"
+            id="six"
+          >
+            6
+          </button>
+          <button
+            onclick="Operator(value)"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            value="-"
+            id="substract"
+          >
+            -
+          </button>
         </div>
         <div id="fourth-row">
-          <button onclick="GetInput(value)" value="7" id="seven">7</button>
-          <button onclick="GetInput(value)" value="8" id="eight">8</button>
-          <button onclick="GetInput(value)" value="9" id="nine">9</button>
-          <button onclick="Operator(value)" value="*" id="multiply">*</button>
+          <button
+            onclick="GetInput(value)"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            value="7"
+            id="seven"
+          >
+            7
+          </button>
+          <button
+            onclick="GetInput(value)"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            value="8"
+            id="eight"
+          >
+            8
+          </button>
+          <button
+            onclick="GetInput(value)"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            value="9"
+            id="nine"
+          >
+            9
+          </button>
+          <button
+            onclick="Operator(value)"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            value="*"
+            id="multiply"
+          >
+            *
+          </button>
         </div>
         <div id="fifth-row">
-          <button onclick="GetInput(value)" value="." id="dot">.</button>
-          <button onclick="GetInput(value)" value="0" id="zero">0</button>
-          <button onclick="Equal()" id="equal">=</button>
-          <button onclick="Operator(value)" value="/" id="divine">/</button>
+          <button
+            onclick="GetInput(value)"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            value="."
+            id="dot"
+          >
+            .
+          </button>
+          <button
+            onclick="GetInput(value)"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            value="0"
+            id="zero"
+          >
+            0
+          </button>
+          <button
+            onclick="Equal()"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            id="equal"
+          >
+            =
+          </button>
+          <button
+            onclick="Operator(value)"
+            onmousedown="MouseDown()"
+            onmouseup="MouseUp()"
+            value="/"
+            id="divine"
+          >
+            /
+          </button>
         </div>
       </div>
     </div>

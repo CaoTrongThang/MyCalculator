@@ -25,8 +25,24 @@ body {
     border-style: solid;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
 }
-
+#current-operator-display{
+    display: flex;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: transparent;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+}
+#current-operator-text{
+    font-size: 40px;
+    font-weight: 500;
+    margin: auto;
+    color: white;
+}
 #input-holder{
     display: flex;
     flex-direction: column;
@@ -150,4 +166,34 @@ body {
 }
 #equal{
     margin-right: 5px;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #zero, #dot, #equal, #add, #substract, #multiply, #divine{
+    transition-duration: 0.2s;
+}
+
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover, #six:hover, #seven:hover, #eight:hover, #nine:hover, #zero:hover, 
+#dot:hover, #equal:hover, #add:hover, #substract:hover, #multiply:hover, #divine:hover{
+    background-color: rgba(30, 30, 30, 0.5)
+}
+
+#one:active, #two:active, #three:active, #four:active, #five:active, #six:active, #seven:active, #eight:active, #nine:active, #zero:active, 
+#dot:active, #equal:active, #add:active, #substract:active, #multiply:active, #divine:active{
+    background-color: rgba(70, 70, 70, 0.5);
+    height: 50px;
+    flex: 0.7;
+}
+
+#AC, #CE{
+    transition-duration: 0.5s;
+}
+
+#AC:hover, #CE:hover{
+    background-color: rgba(33, 0, 0, 0.5);
+}
+
+#AC:active, #CE:active{
+    background-color: rgba(112, 0, 0, 0.5);
+    flex: 1;
+    height: 50px;
 }
