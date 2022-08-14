@@ -1,0 +1,153 @@
+
+body {
+    padding: 0;
+    margin: 0;
+}
+#container{
+    display: flex;
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgb(112, 112, 112));
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#caculator-box{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 510px;
+    border-width: 1px;
+    border-color:white;
+    border-style: solid;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#input-holder{
+    display: flex;
+    flex-direction: column;
+}
+
+#input-ref, #current-input{
+    outline: none;
+    border: none;
+    background-color: rgba(0,0,0,0.5);
+    height: 70px;
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#input-ref{
+    font-size: 20px;
+    color: gray;
+    padding-right: 20px
+}
+#current-input{
+    font-size: 30px;
+    color: white;
+    padding-right: 10px
+}
+
+#first-row, #second-row, #third-row, #fourth-row, #fifth-row{
+    display: flex;
+    flex-direction: row;
+}
+#AC, #CE{
+    flex: 1;
+    background-color: rgba(0, 0, 0,0.5);
+    font-size: 30px;
+    border: none;
+    margin-top: 10px;
+    color: rgb(230, 230, 230);
+}
+#AC{
+    margin-right: 2px;
+}
+#CE{
+    margin-left: 2px;
+}
+
+#one, #two, #three, #add{
+    height: 70px;
+    flex: 1;
+    border:none;
+    color: rgb(230, 230, 230);
+    font-size: 30px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#one{
+ margin-right: 5px;
+}
+#two{
+    margin-right: 5px;
+}
+#three{
+    margin-right: 5px;
+}
+
+#four, #five, #six, #substract{
+    height: 70px;
+    flex: 1;
+    border:none;
+    color: rgb(230, 230, 230);
+    font-size: 30px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#four{
+ margin-right: 5px;
+}
+#five{
+    margin-right: 5px;
+}
+#six{
+    margin-right: 5px;
+}
+
+#seven, #eight, #nine, #multiply{
+    height: 70px;
+    flex: 1;
+    border:none;
+    color: rgb(230, 230, 230);
+    font-size: 30px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#seven{
+ margin-right: 5px;
+}
+#eight{
+    margin-right: 5px;
+}
+#nine{
+    margin-right: 5px;
+}
+
+#dot, #zero, #equal, #divine{
+    height: 70px;
+    flex: 1;
+    border:none;
+    color: rgb(230, 230, 230);
+    font-size: 30px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#dot{
+    margin-right: 5px;
+}
+#zero{
+    margin-right: 5px;
+}
+#equal{
+    margin-right: 5px;
+}
